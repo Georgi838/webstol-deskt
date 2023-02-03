@@ -1,0 +1,95 @@
+.main-div-menuThisWeek {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 36px;
+  padding: 0px 8px;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  transition:all 600ms ease;
+}
+.main-div-menuThisWeek:hover {
+  box-shadow: 7px 8px 15px #010535c9;
+  transform: scale(1.02);
+}
+.go__back-div {
+  margin: 16px;
+  display: flex;
+  width: 92.4%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 24px;
+}
+.go__back-div h3 {
+  margin-bottom: 16px;
+}
+.main-div-menuThisWeek div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 24px;
+  border-radius: 16px;
+  padding: 8px 16px;
+  background: linear-gradient(360deg, var(--secondaryBackground-firstColor) 2.34%, var(--secondaryBackground-secondColor) 100.78%);
+  min-width: 320px;
+  transition: all 600ms ease;
+}
+.main-div-menuThisWeek div:hover {
+  transform: scale(1.04);
+}
+.main-div-menuThisWeek h3 {
+  text-align: left;
+  padding-bottom: 8px;
+  font-size: var(--fs-200);
+  overflow: hidden;
+  font-weight: 600;
+}
+.main-div-menuThisWeek p {
+  font-size: var(--fs-600);
+  font-weight: 600;
+  padding: 6px;
+}
+.main-div-menuThisWeek .label-content-two {
+  background: linear-gradient(180deg, var( --titleTabColor-first) 15.34%,  var( --titleTabColor-second) 100.78%);
+  width: 150%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  margin: 36px;
+  padding: 12px;
+  margin-top: -10px;
+  margin-bottom: 12px;
+}
+.week__title {
+  font-size: var(--fs-700);
+  text-align: center;
+  padding-top: 12px;
+}
+.column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1035px) {
+  .main-div-menuThisWeek div {
+    width: 33%;
+    height: 280px;
+    margin: 12px;
+  }
+  .main-div-menuThisWeek .label-content-two {
+    margin: 12px;
+
+    margin-top: -10px;
+  }
+  .main-div-menuThisWeek h3 {
+    padding-bottom: 48px;
+    width: 100%;
+    font-size: var(--fs-300);
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,120 @@
+
+.next-week {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 36px;
+  padding: 16px;
+  border-radius:16px;
+  
+  transition:all 600ms ease;
+}
+.next-week:hover {
+  box-shadow: 7px 8px 15px #010535c9;
+  transform: scale(1.02);
+}
+.next-week-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(360deg, var(--secondaryBackground-firstColor) 2.34%, var(--secondaryBackground-secondColor) 100.78%);
+  padding: 24px 36px;
+  margin: 24px 36px;
+  border-radius: 12px;
+  min-width: 320px;
+  transition: all 600ms ease;
+}
+.next-week-menu:hover {
+  transform: scale(1.04);
+}
+.column-meal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  overflow: hidden;
+}
+.column-meal label {
+  margin-left: 8px;
+  padding-bottom: 4px;
+  font-weight: 600;
+  font-size: var(--fs-300);
+}
+
+.next-week input {
+  height: 1.75rem;
+  width: 100%;
+  margin: 6px 0;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  padding-left: 6px;
+}
+
+.save {
+  padding: 20px;
+  width: 30%;
+  border-radius: 16px;
+  border: none;
+  margin: 10px 0 20px 0;
+  /* background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100.78%); */
+  font-size: var(--fs-400);
+  font-weight: 600;
+  margin-top:6px;
+}
+.label-content-three {
+  background: linear-gradient(180deg, var( --titleTabColor-first) 15.34%,  var( --titleTabColor-second) 100.78%);
+  width: 150%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  margin: 36px;
+  padding: 12px;
+  margin-top: -25px;
+  margin-bottom: 12px;
+}
+.label-content-three .para {
+  font-size: var(--fs-600);
+  /* margin:16px; */
+  font-weight: 600;
+}
+.go__back-div-two {
+  margin: 16px;
+  display: flex;
+  width: 92.4%;
+  align-items: center;
+  justify-content: space-around;
+}
+.week__title-two {
+  font-size: var(--fs-700);
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom:16px;
+}
+@media only screen and (max-width: 960px) {
+  .next-week-menu {
+    width: 300px;
+    height: 330px;
+    margin: 12px;
+  }
+  .label-content-three {
+    max-height: 60px;
+  }
+  .main-div-menuThisWeek h3 {
+    padding-bottom: 48px;
+    width: 100%;
+    font-size: var(--fs-300);
+    overflow: hidden;
+  }
+  .label-content-three p {
+    font-size: var(--fs-400);
+    font-weight: 600;
+  }
+}

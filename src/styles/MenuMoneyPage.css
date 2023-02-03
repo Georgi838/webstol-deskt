@@ -1,0 +1,37 @@
+:root {
+  --lightBlue: #88d3ee;
+  --mainBlue: #3fbdeb;
+  --heavyBlue: #3294b8;
+  --darkBlue: #1d566b;
+  --greenBlue: #3d5f6b;
+}
+
+/* @font-face {
+    font-family: 'CustomFont';
+    src: url('../../custom/Arsenal-woff/Arsenal-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.menu-money-content-div {
+  height: 100vh;
+}
+
+.main-section-MenuMoneyPage {
+  height: 100%;
+  background: linear-gradient(120deg, var(--background-firstColor) 15.34%, var(--background-secondColor) 100.78%);
+  overflow: scroll;
+}
+
+.disable-events {
+  pointer-events: none;
+}
+
+@media only screen and (min-width: 769px) {
+}

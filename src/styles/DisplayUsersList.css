@@ -1,0 +1,234 @@
+
+/*
+
+main
+
+*/
+.main-div-displayUsersList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-div {
+  display: flex;
+  overflow:visible;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  /* height:100%; */
+  background: transparent;
+  padding: 16px;
+  overflow: auto;
+  height: 450px;
+  /* padding-top: 440px; */
+  border-radius: 12px;
+  margin-bottom: 36px;
+  transition: all 450ms ease;
+}
+.map-div:hover {
+  overflow-x:hidden;
+  transform: scale(1.02);
+  box-shadow: 7px 8px 15px #010535c9;
+}
+.students-df {
+  margin: 16px;
+  padding-left: 6px;
+  display: flex;
+  width: 91.5%;
+  align-items: center;
+  justify-content: space-between;
+}
+/*
+
+row
+
+*/
+.student-div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+  min-height: 90px;
+  overflow: visible;
+  grid-template-columns: repeat(6, 1fr);
+  /* margin: 1.5em 0; */
+  transition: all 300ms ease;
+  /* background: linear-gradient(90deg, var(--lightBlue) 15.34%, #2280de 100.78%); */
+  background: linear-gradient(180deg, var(--lightBlue) 15.34%, #2280de 100.78%);
+  border-radius: 12px;
+  margin: 6px ;
+  padding: 16px 8px;
+  height: 85px;
+  
+  margin-bottom: 12px;
+}
+.student-div:hover {
+  transform: scale(1.01);
+  box-shadow: 5px 5px 10px #010535c9;
+}
+.student-div-right {
+  text-align: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.student-div-middle {
+  text-align: center;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.student-div-middle-2 {
+  text-align: center;
+  align-items: center;
+  padding: 8px;
+  margin-right: 8px;
+}
+.student-div-middle-2 button {
+  margin-right: 10px;
+}
+
+.student-div-middle-3 {
+  text-align: center;
+}
+
+.student-div-middle-4 {
+  text-align: center;
+  align-items: center;
+}
+
+.student-div-middle-5 {
+  text-align: center;
+  align-items: center;
+}
+
+.price-paid {
+  color: rgb(39, 11, 153);
+}
+
+.price-not-paid {
+  color: rgb(147, 9, 9);
+}
+
+.student-div-left {
+  margin-left: 0.5em;
+}
+#number {
+  width: 50%;
+  text-align: left;
+  margin-right: 10px;
+  font-size: 16px;
+}
+#name {
+  width: 120%;
+}
+.map-div p {
+  /* width: 70%; */
+  font-size: 18px;
+  font-weight: 600;
+}
+.map-div button {
+  font-size: var(--fs-300);
+}
+.btn {
+  padding: 4px 12px;
+  border-radius: 16px;
+  border: none;
+  /* background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100.78%); */
+  font-size: 15px;
+  margin: 4px;
+  min-width: 50px;
+}
+.student-div-right button {
+  min-width: 90px;
+  padding: 4px;
+  margin-right: 8px;
+}
+.student-div-right button {
+  min-width: 90px;
+  padding: 4px;
+  margin-right: 8px;
+}
+.df-users-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*
+
+selector
+
+*/
+.selector-title {
+  margin-bottom: 12px;
+  margin-left:150px;
+  font-size: var(--fs-700);
+}
+.student-select {
+  width: 150px;
+  height: 2.5rem;
+  padding-left: 2px;
+  border-radius: 6px;
+  background: transparent;
+  text-align: center;
+  font-weight: 600;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  margin-top: 8px;
+  transition: all 450ms ease;
+  margin-bottom: 8px;
+}
+.caret {
+  position: absolute;
+  top: 10;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  margin-right: 6px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #242424;
+  transition: 0.3s;
+}
+.selector-caret {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, var(--button-firstColor) 15.34%, var(--button-secondColor) 100.78%);
+  border-radius: 16px;
+  height: 40px;
+  margin: 20px;
+  overflow: hidden;
+  transition: all 450ms ease;
+}
+.selector-caret:hover {
+  /* transform: scale(1.05); */
+  box-shadow: 6px 3px 10px #010535c9;
+}
+select option {
+  background: #86d9ff;
+  font-weight: 600;
+}
+
+/* .student-select-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+
+.back-icon {
+  padding: 6px 16px;
+  
+}
+@media only screen and (max-width: 950px) {
+  .map-div p {
+    width: 70%;
+    font-size: 15px;
+  }
+}

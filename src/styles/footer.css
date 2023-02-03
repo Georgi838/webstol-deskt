@@ -1,0 +1,43 @@
+:root {
+  --lightBlue: #88d3ee;
+  --mainBlue: #3fbdeb;
+  --heavyBlue: #3294b8;
+  --darkBlue: #1d566b;
+  --greenBlue: #3d5f6b;
+}
+
+/* @font-face {
+    font-family: 'CustomFont';
+    src: url('../Arsenal-woff/Arsenal-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.footer {
+  height: 145px !important;
+  display: flex;
+  width: 100%;
+  padding: 15px 2px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, var(--header-footerFirstColor) 5.34%, var(--header-footerSecondColor) 100.78%);
+}
+.footer__image {
+  width: 100px;
+  transition: all 450ms ease;
+}
+.footer__image:hover {
+  transform: scale(1.05);
+}
+.footer__copyright {
+  font-size: var(--fs-200);
+  font-weight: 600;
+  margin-left:12px;
+  margin-bottom: 6px;
+}

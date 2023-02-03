@@ -1,0 +1,160 @@
+:root {
+  --lightBlue: #88d3ee;
+  --mainBlue: #3fbdeb;
+  --heavyBlue: #3294b8;
+  --darkBlue: #1d566b;
+  --greenBlue: #3d5f6b;
+}
+
+/* @font-face {
+    font-family: 'CustomFont';
+    src: url('../../custom/Arsenal-woff/Arsenal-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+/*
+
+random
+
+*/
+.disable-events {
+  pointer-events: none;
+}
+.there__was--no-div-but-i-wanted-padding-top-and-bottom {
+  padding: 20px 8px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+/*
+
+main 
+
+*/
+.month__report--content-div {
+  height: 100vh;
+}
+.main__section--MonthReportPage {
+  height: 100%;
+  background: linear-gradient(120deg, var(--background-firstColor) 15.34%, var(--background-secondColor) 100.78%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+/*
+
+go back button
+
+*/
+.month__report-df {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px;
+}
+
+/*
+
+boxes
+
+*/
+.main__section--MonthReportPage-div {
+  display: flex;
+  width: 95%;
+  height: 100%;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  transition: all 600ms ease;
+  border-radius:16px;
+  padding-top:12px;
+  padding-bottom:12px;
+  margin:12px;
+}
+.main__section--MonthReportPage-div:hover {
+  box-shadow: 7px 8px 15px #010535c9;
+  transform: scale(1.03);
+}
+.column-month {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(360deg, var(--secondaryBackground-firstColor) 2.34%, var(--secondaryBackground-secondColor) 100.78%);
+  margin: 16px 32px;
+  padding: 48px;
+  min-width: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 450ms ease;
+}
+.input {
+  width: 110%;
+  height: 2.5rem;
+  margin: 12px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.btn-changes {
+  margin-top: 12px;
+  margin-bottom: -20px;
+  padding: 12px 36px;
+  border-radius: 16px;
+  border: none;
+  background: rgb(25, 122, 154);
+  font-size: 15px;
+  font-size: var(--fs-200);
+}
+.column-month label {
+  font-size: var(--fs-530);
+  margin: 10px;
+  font-weight: 600;
+}
+.column-month:hover {
+  transform: scale(1.03);
+ 
+}
+.label-content {
+  background: linear-gradient(180deg, var( --titleTabColor-first) 15.34%,  var( --titleTabColor-second) 100.78%);
+  width: 150%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: 16px;
+  margin-top: -50px;
+}
+.dateToday {
+  font-size:16px!important;
+  padding-bottom:8px;
+  
+}
+@media only screen and (max-width: 1110px) {
+  .column-month {
+    min-width: 300px;
+  }
+}
+@media only screen and (max-width: 870px) {
+  .column-month {
+    width: 300px;
+    margin: 24px;
+    padding: 36px;
+  }
+  .column-month label {
+    padding-top: 8px;
+  }
+}

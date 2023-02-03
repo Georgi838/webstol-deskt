@@ -1,0 +1,83 @@
+
+.menu__money--div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu__money--div p {
+  font-size: var(--fs-550);
+  text-align:center;
+  margin-left:12px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-right:24px;
+  max-width: 470px;
+}
+.display-flex-two {
+  display: flex;
+  margin-top: 36px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 470px;
+}
+.menu-display-flex {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  align-items: center;
+  justify-content: center;
+}
+.margin--left {
+  margin-top: 32px;
+  text-align: left;
+}
+
+.menu__money--div .button {
+  margin-bottom: 12px;
+}
+.menu--display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1012px) {
+  .menu__money--div p {
+    font-size: var(--fs-530);
+    text-align:center;
+  margin-left:12px;
+    font-weight: 600;
+  }
+  .menu__money--div .button {
+    margin-bottom: 12px;
+  }
+  .display-flex-two {
+    max-width: 400px;
+  }
+}
+@media only screen and (max-width: 845px) {
+  .menu__money--div p {
+    font-size: var(--fs-530);
+    text-align:center;
+  margin-left:12px;
+    height: 100%;
+    font-weight: 600;
+  }
+  .display-flex {
+    max-width: 350px;
+  }
+}

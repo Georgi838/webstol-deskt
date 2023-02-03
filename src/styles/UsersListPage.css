@@ -1,0 +1,43 @@
+:root {
+  --lightBlue: #88d3ee;
+  --mainBlue: #3fbdeb;
+  --heavyBlue: #3294b8;
+  --darkBlue: #1d566b;
+  --greenBlue: #3d5f6b;
+}
+
+/* @font-face {
+    font-family: 'CustomFont';
+    src: url('../../custom/Arsenal-woff/Arsenal-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+* ::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.users__list--content-div {
+  height: 100vh;
+}
+
+.main__section--UsersListPage {
+  height: 85%;
+overflow:hidden;
+background: linear-gradient(120deg, var(--background-firstColor) 15.34%, var(--background-secondColor) 100.78%);
+}
+.main-div-displayUsersList {
+  overflow: scroll;
+}
+
+.disable-events {
+  pointer-events: none;
+}

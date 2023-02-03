@@ -1,0 +1,34 @@
+.one__more--div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.month-report {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.one__more--div p {
+  font-size: var(--fs-600);
+  padding: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1012px) {
+  .one__more--div p {
+    font-size: var(--fs-550);
+    padding: 12px;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 845px) {
+  .one__more--div p {
+    font-size: var(--fs-550);
+    padding: 12px;
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+}
